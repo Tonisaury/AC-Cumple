@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    background-color: #ffa861; /* Fallback background color */
+    font-family: 'Arial', sans-serif;
+}
+
+#isabelle-container {
+    position: relative;
+    width: auto; /* Adjust to match the width of your GIF */
+    margin: auto; /* Center the container */
+}
+
+/* Media query for larger screens (e.g., PCs) */
+@media (min-width: 768px) { /* Adjust the breakpoint as needed */
+    #isabelle-container {
+        width: 400px; /* Fixed width for larger screens */
+    }
+}
+
+#isabelle-img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area fully, might crop the image */
+    display: block;
+}
+
+#text-box {
+    z-index: 2; /* Make sure it's higher than the #isabelle-container's z-index */
+    position: absolute; /* or 'fixed', depending on your layout needs */
+    top: 66%; /* Adjust these to position the text box as needed */
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0); /* Transparent black background for the text */
+    color: #5a3b1d; /* White text */
+    padding: 10px;
+    text-align: start;
+    display: block;
+    width: 80%; /* Adjust the width of the text box */
+    max-width: 600px; /* Set a max-width to prevent it from becoming too wide on large screens */
+    margin: auto; /* Center the text box horizontally */
+
+    /* Existing styles */
+    font-family: 'Patrick Hand', cursive; /* Change the font */
+    font-size: 16px; /* Adjust the font size */
+    line-height: 1.4; /* Adjust the line height for better readability */
+
+    white-space: pre-wrap; /* Ensures that the text respects natural breaks and spaces */
+    word-wrap: break-word; /* Allows long words to break and wrap to the next line */
+
+    height: 100px; /* Adjust based on your preference, or set a max-height */
+    max-height: 300px; /* Example max-height */
+}
+
+.highlight {
+    color: #76b947; /* A bright green for highlighting */
+}
+
+/* Loading screen styles */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffa861;
+    color: #5a3b1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'Patrick Hand', cursive;
+}
