@@ -4,9 +4,9 @@ const gifPairs = [
     { speaking: "GIFs/Speak9.gif", idle: "GIFs/Idle9_R.gif" },
     { speaking: "GIFs/Speak8.gif", idle: "GIFs/Idle8_R.gif" },
     { speaking: "GIFs/Speak4.gif", idle: "GIFs/Idle4_R.gif" },
-    
 ];
-const finalImagePath = "BonDia.jpg"; // Replace with the actual path to your image
+
+const finalText = "MOLTES FELICITATS!!!"; // Text to display at the end
 
 let isAnimating = false;
 
@@ -60,8 +60,11 @@ function changeGifToIdle(index) {
 
 function displaySentence() {
     if (currentSentence >= sentences.length || isAnimating) {
-        document.getElementById('isabelle-img').src = finalImagePath;
-        document.getElementById('text-box').style.display = 'none';
+        // Hide the GIF and display the final text message
+        document.getElementById('isabelle-img').style.display = 'none';
+        const textBox = document.getElementById('text-box');
+        textBox.innerHTML = finalText;
+        textBox.style.display = 'block';
         return;
     }
 
