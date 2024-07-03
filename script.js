@@ -1,28 +1,21 @@
 const gifPairs = [
-    { speaking: "GIFs/Speak1.gif", idle: "GIFs/Idle1_R.gif" },
-    { speaking: "GIFs/Speak2_R.gif", idle: "GIFs/Idle2_R.gif" },
     { speaking: "GIFs/Speak3.gif", idle: "GIFs/Idle3_R.gif" },
-    { speaking: "GIFs/Speak4.gif", idle: "GIFs/Idle4_R.gif" },
-    { speaking: "GIFs/Speak5.gif", idle: "GIFs/Idle5_R.gif" },
-    { speaking: "GIFs/Speak6.gif", idle: "GIFs/Idle6_R.gif" },
-    { speaking: "GIFs/Speak7.gif", idle: "GIFs/Idle7_R.gif" },
+    { speaking: "GIFs/Speak2_R.gif", idle: "GIFs/Idle2_R.gif" },
+    { speaking: "GIFs/Speak9.gif", idle: "GIFs/Idle9_R.gif" },
     { speaking: "GIFs/Speak8.gif", idle: "GIFs/Idle8_R.gif" },
-    { speaking: "GIFs/Speak9.gif", idle: "GIFs/Idle9_R.gif" }
+    { speaking: "GIFs/Speak4.gif", idle: "GIFs/Idle4_R.gif" },
+    
 ];
 const finalImagePath = "BonDia.jpg"; // Replace with the actual path to your image
 
 let isAnimating = false;
 
 const sentences = [
-    "Bon dia!! Des de Juneau esperem que vagi super bé avui!!",
-    "Avui farà un dia tranquil, sol amb una mica de núvol.",
-    "És important pendre's-ho amb calma i disfrutar dels petits moments.",
-    "Quina sort de poder gaudir d'un altre dia ple d'oportunitats.", 
-    "Recorda que hi ha molta gent que t'estima. Estem amb tu!!",
-    'Vigila de no treballar massa. També és important descansar.',
-    'Et desitjo un dia meravellòs.',
-    'I com diria la Taytay:',
-    "But I keep cruising, can't stop, won't stop moving. It's like I got this music in my mind. Saying, 'It's gonna be alright'."
+    "BON DIAAAA!! Avui celebrem el dia més important de l'any!!", // Flowers
+    "Fa 27 anys que el cel, la lluna i les estrelles estaven més maques que mai.", // Melancholic
+    "Avui és el cumple de la nostra persona preferida!!", // Singing
+    "Desde Juneau et volem desitjar que siguis molt feliç. ", 
+    "MOLTES FELICITATS!!!!!"
 ];
 
 let currentSentence = 0;
